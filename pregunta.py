@@ -17,7 +17,7 @@ def fecha(x):
 
 def clean_data():
 
-    df = pd.read_csv("solicitudes_credito.csv", sep=";"
+    df = pd.read_csv("solicitudes_credito.csv", sep=";")
 
     df.drop(['Unnamed: 0'], axis=1,inplace=True)
     df.drop_duplicates(inplace=True)
